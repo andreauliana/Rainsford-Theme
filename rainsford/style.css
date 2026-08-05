@@ -749,6 +749,9 @@ nav {
 	.about .about-right {
 		margin-top: 7rem;
 	}
+	.about .about-right h3 {
+		margin-bottom: 1rem;
+	}	
 	.about-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
