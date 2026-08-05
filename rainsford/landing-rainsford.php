@@ -80,7 +80,6 @@ function medman_rich( $post_id, $key ) {
 				</div>
 			</div>
 		</div>
-
 		<!-- 4 SECTORS -->
 		<div class="sectors">
 			<div class="container">
@@ -92,13 +91,9 @@ function medman_rich( $post_id, $key ) {
 							if ( empty( $text ) ) continue;
 							$icon_url = $icon_id ? wp_get_attachment_image_url( $icon_id, 'thumbnail' ) : '';
 							?>
-							<div class="spacer">
-								<div class='col s12 m3' <?php echo $icon_url ? ' style="background-image: url(' . esc_url( $icon_url ) . ');"' : ''; ?>  >
-									<p><?php echo esc_html( $text ); ?></p>
-								</div>
+							<div class='col s12 m3' <?php echo $icon_url ? ' style="background-image: url(' . esc_url( $icon_url ) . ');"' : ''; ?>  >
+								<p><?php echo esc_html( $text ); ?></p>
 							</div>
-
-
 						<?php endfor; ?>
 					</div>					
 				</div>
@@ -114,19 +109,14 @@ function medman_rich( $post_id, $key ) {
 			</div>
 		</div>
 	</section>
-
 	<!-- WHY US -->
 	<section id="why-us" class="why-us">
-
-
 		<div class="parallax-wrap why-top-parallax" data-parallax data-parallax-speed-mobile="0.08" data-parallax-speed-desktop="0.15">
 			<?php
 			$bottom = medman_meta( $post_id, 'why_us_image_top' );
 			if ( $bottom ) echo wp_get_attachment_image( $bottom, 'large' );
 			?>
 		</div>
-
-
 		<div class="container">
 			<div class="row">
 				<div class="col s12">
