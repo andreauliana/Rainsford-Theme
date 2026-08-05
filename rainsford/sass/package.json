@@ -1,0 +1,13 @@
+{
+  "name": "rainsford-materialize-sass",
+  "version": "1.0.0",
+  "description": "Custom Materialize SASS build for the Rainsford Developments theme",
+  "scripts": {
+    "build": "sass materialize-sass/materialize.scss:../css/materialize-custom.min.css --style=compressed --no-source-map && cat banner.txt ../css/materialize-custom.min.css > ../css/tmp.css && mv ../css/tmp.css ../css/materialize-custom.min.css",
+    "build:dev": "sass materialize-sass/materialize.scss:../css/materialize-custom.css --style=expanded && cat banner.txt ../css/materialize-custom.css > ../css/tmp-dev.css && mv ../css/tmp-dev.css ../css/materialize-custom.css",
+    "watch": "sass --watch materialize-sass/materialize.scss:../css/materialize-custom.css --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.102.0"
+  }
+}
