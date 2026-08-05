@@ -4,7 +4,7 @@ Theme URI: https://medicineman.agency/
 Author: Medicineman
 Author URI: https://medicineman.agency/
 Description: Custom theme for Rainsford Development
-Version: 1.0.0
+Version: 1.1.0
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -536,9 +536,7 @@ textarea {
 }
 
 
-
 /* START CUSTOM CODE */
-
 /* Quick wider container fix - later to adapt on SASS */
 
 @media only screen and (min-width: 993px) {
@@ -547,7 +545,6 @@ textarea {
 		max-width: 1370px;
 	}
 }
-
 
 .full-width img {
 	display: block;
