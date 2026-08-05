@@ -140,12 +140,12 @@ add_action( 'widgets_init', 'rainsford_widgets_init' );
 function rainsford_scripts() {
 	// Materialize CSS is compiled locally via SASS (see /sass in the theme root) —
 	// no longer loaded from the CDN, so container/gutter overrides live at the source.
-	wp_enqueue_style( 'materialize-custom', get_template_directory_uri() . '/css/materialize-custom.min.css', array(), _S_VERSION );
+	wp_enqueue_style( 'materialize-custom', get_template_directory_uri() . '/css/materialize-custom.min.css', array(), filemtime( get_template_directory() . '/css/materialize-custom.min.css' ) );
 
-	wp_enqueue_style( 'rainsford-style', get_stylesheet_uri(), array( 'materialize-custom' ), _S_VERSION );
+	wp_enqueue_style( 'rainsford-style', get_stylesheet_uri(), array( 'materialize-custom' ), filemtime( get_stylesheet_directory() . '/style.css' ) );
 	wp_style_add_data( 'rainsford-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'rainsford-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'rainsford-navigation', get_template_directory_uri() . '/js/navigation.js', array(), filemtime( get_template_directory() . '/js/navigation.js' ), true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -180,7 +180,7 @@ function medman_scripts() {
         'main-js',
         get_template_directory_uri() . '/js/main.js',
         [],
-        _S_VERSION,
+        filemtime( get_template_directory() . '/js/main.js' ),
         true
     );
 
