@@ -92,19 +92,24 @@ function medman_rich( $post_id, $key ) {
 							if ( empty( $text ) ) continue;
 							$icon_url = $icon_id ? wp_get_attachment_image_url( $icon_id, 'thumbnail' ) : '';
 							?>
-							<div class='col s12 m3' <?php echo $icon_url ? ' style="background-image: url(' . esc_url( $icon_url ) . ');"' : ''; ?>  >
-								<p><?php echo esc_html( $text ); ?></p>
+							<div class="spacer">
+								<div class='col s12 m3' <?php echo $icon_url ? ' style="background-image: url(' . esc_url( $icon_url ) . ');"' : ''; ?>  >
+									<p><?php echo esc_html( $text ); ?></p>
+								</div>
 							</div>
+
+
 						<?php endfor; ?>
 					</div>					
 				</div>
 			</div>
 		</div>
-
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m6 offset-m6">
-					<p><?php echo esc_html( medman_meta( $post_id, 'workwith_outro' ) ); ?></p>
+					<div class="work-with_outro">
+						<p><?php echo esc_html( medman_meta( $post_id, 'workwith_outro' ) ); ?></p>
+					</div>
 				</div>
 			</div>
 		</div>
