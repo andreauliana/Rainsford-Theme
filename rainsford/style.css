@@ -1226,15 +1226,6 @@ footer .footer-logo {
 	font-size: 12px;
 	font-family: 'DM Mono' monospace;
 }
-@media only screen and (min-width: 600px) {
-	.widescreen.sub-content h6 {
-		width: 40%;
-	}
-	.widescreen.sub-content h6:last-child {
-		float: right;
-		text-align: right;
-	}
-}
 .footer-content .no-icon {
 	margin-left: 16px;
 }
@@ -1286,6 +1277,11 @@ footer .footer-logo {
 	}
 	.footer-content .widescreen {
 		display: block;
+	}
+	.footer-content .widescreen.sub-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 	.footer-divider,
 	.footer-bottom {
