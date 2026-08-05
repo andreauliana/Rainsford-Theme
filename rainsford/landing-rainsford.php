@@ -112,12 +112,15 @@ function medman_rich( $post_id, $key ) {
 
 	<!-- WHY US -->
 	<section id="why-us" class="why-us">
-		<div class="full-width">
+
+
+		<div class="parallax-wrap why-top-parallax" data-parallax data-parallax-speed-mobile="0.08" data-parallax-speed-desktop="0.15">
 			<?php
-			$top = medman_meta( $post_id, 'why_us_image_top' );
-			if ( $top ) echo wp_get_attachment_image( $top, 'large' );
+			$bottom = medman_meta( $post_id, 'why_us_image_top' );
+			if ( $bottom ) echo wp_get_attachment_image( $bottom, 'large' );
 			?>
 		</div>
+
 
 		<div class="container">
 			<div class="row">
