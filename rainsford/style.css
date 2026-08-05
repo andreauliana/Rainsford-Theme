@@ -849,6 +849,7 @@ nav {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-clip: content-box;
 	display: flex;
 	align-items: center;  
 	justify-content: center;
@@ -857,16 +858,6 @@ nav {
 	background-size: cover;
 	background-position: center;
 	position: relative;
-}
-
-@media only screen and (min-width: 600px) {
- 
-/*	.sectors-container .spacer {
-		margin-left: 1rem;
-	}
-	.sectors-container .spacer:last-child {
-		margin-left: 0;
-	}*/
 }
 
 .sectors-container .col p {
