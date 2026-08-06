@@ -641,6 +641,13 @@ nav ul a:hover {
 	    margin-top: .25rem;
 	}
 }
+.sidenav li>a {
+	height: 60px;
+	line-height: 60px;
+}
+.sidenav li {
+	line-height: 60px;
+}
 .main-navigation .sidenav-trigger {
 	float: none;
 	margin: 0 -10px 0 0;;
@@ -804,7 +811,20 @@ nav ul a:hover {
 	color: #fff;
 	min-height: 362px;
 }
-
+.box1::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: url('inc/bg-boxes-01.svg') no-repeat right bottom;
+	z-index: 0;
+}
+.box2::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: url('inc/bg-boxes-02.svg') no-repeat left bottom;
+	z-index: 0;
+}
 @media only screen and (min-width: 600px) {
 	.hero-boxes {
 		flex-direction: row;
@@ -813,7 +833,6 @@ nav ul a:hover {
 		width: 50%;
 		min-height: 445px;
 	}
-
 	.box1 .container,
 	.box1 .row,
 	.box1 .col,
@@ -860,8 +879,6 @@ nav ul a:hover {
 		background: url('inc/bg-boxes-02.svg') no-repeat left bottom;
 		z-index: 0;
 	}
-
-
 }
 
 
