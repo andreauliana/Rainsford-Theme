@@ -1276,7 +1276,7 @@ footer .contact h3 {
 	.footer-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		column-gap: 80px;
+		column-gap: 3rem;
 		align-items: start;
 		padding: 3rem 0;
 	}
