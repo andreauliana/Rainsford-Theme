@@ -1197,6 +1197,10 @@ footer {
 	background: #1D1D1B;
 	color: #fff;
 }
+footer .contact .row {
+	margin-bottom: 0;
+	padding-bottom: 2rem;
+}
 footer .footer-logo {
 	width: 250px;
 }

@@ -2,28 +2,17 @@
 /**
  * Template Name: Landing Rainsford
  *
- * Copy this file into the active theme (or child theme) root.
- * Structure below mirrors the hardcoded reference HTML exactly —
- * update markup here first if the design changes, fields stay the same.
- */
-
+*/
 get_header();
-
 $post_id = get_the_ID();
-
-/** Get a meta value without any HTML processing */
 function medman_meta( $post_id, $key ) {
 	return get_post_meta( $post_id, "_medman_{$key}", true );
 }
-
-/** Echo a rich text field through the_content filter (adds paragraphs, allows lists) */
 function medman_rich( $post_id, $key ) {
 	echo apply_filters( 'the_content', medman_meta( $post_id, $key ) );
 }
 ?>
-
 <main id="main-content" class="landing-rainsford">
-
 	<!-- HERO -->
 	<section id="hero" class="hero">
 		<div class="container">
@@ -33,15 +22,12 @@ function medman_rich( $post_id, $key ) {
 				</div>
 			</div>
 		</div>
-		
-
 		<div class="parallax-wrap hero-parallax" data-parallax data-parallax-speed-mobile="0.08" data-parallax-speed-desktop="0.18">
 			<?php
 			$hero_image = medman_meta( $post_id, 'hero_image' );
 			if ( $hero_image ) echo wp_get_attachment_image( $hero_image, 'large' );
 			?>
 		</div>
-
 		<div class="hero-boxes">
 			<div class="box1">
 				<div class="container">
@@ -52,7 +38,6 @@ function medman_rich( $post_id, $key ) {
 					</div>
 				</div>
 			</div>
-
 			<div class="box2">
 				<div class="container">
 					<div class="row">
@@ -64,20 +49,22 @@ function medman_rich( $post_id, $key ) {
 			</div>
 		</div>
 	</section>
-
 	<!-- ABOUT  -->
 	<section id="about" class="about">
-
 		<div class="container">
-			<div class="about-grid">
-				<div class="about-left">
-					<h5>ABOUT US</h5>
-					<h4><?php echo esc_html( medman_meta( $post_id, 'about_intro' ) ); ?></h4>
-				</div>
-				<div class="about-right">
-					<?php medman_rich( $post_id, 'about_content' ); ?>
-					<h3><?php echo esc_html( medman_meta( $post_id, 'workwith_intro' ) ); ?></h3>
-				</div>
+			<div class="row">
+				<div class="col s12">
+					<div class="about-grid">
+						<div class="about-left">
+							<h5>ABOUT US</h5>
+							<h4><?php echo esc_html( medman_meta( $post_id, 'about_intro' ) ); ?></h4>
+						</div>
+						<div class="about-right">
+							<?php medman_rich( $post_id, 'about_content' ); ?>
+							<h3><?php echo esc_html( medman_meta( $post_id, 'workwith_intro' ) ); ?></h3>
+						</div>
+					</div>
+				</div>				
 			</div>
 		</div>
 		<!-- 4 SECTORS -->
@@ -128,35 +115,37 @@ function medman_rich( $post_id, $key ) {
 			</div>
 
 			<div class="why-grid">
-				<div class="why-left">
-					<?php medman_rich( $post_id, 'why_us_content' ); ?>
-				</div>
-
-				<div class="why-right">
-					<ul class="collapsible">
-						<?php for ( $i = 1; $i <= 4; $i++ ) :
-							$title = medman_meta( $post_id, "why_blocks_{$i}_title" );
-							if ( empty( $title ) ) continue;
-							?>
-							<li<?php echo $i === 1 ? ' class="active"' : ''; ?>>
-								<div class="collapsible-header">
-									<div class="collapsible-header-inner">
-										<h4><?php echo esc_html( $title ); ?></h4>
-										<i class="collapsible-icon">
-											<img src="<?php echo esc_url( get_template_directory_uri() . '/inc/collapsable-icon.svg' ); ?>" alt="">
-										</i>
-									</div>
-								</div>
-								<div class="collapsible-body">
-									<?php medman_rich( $post_id, "why_blocks_{$i}_text" ); ?>
-								</div>
-							</li>
-						<?php endfor; ?>
-					</ul>
+				<div class="row">
+					<div class="col s12">
+						<div class="why-left">
+							<?php medman_rich( $post_id, 'why_us_content' ); ?>
+						</div>
+						<div class="why-right">
+							<ul class="collapsible">
+								<?php for ( $i = 1; $i <= 4; $i++ ) :
+									$title = medman_meta( $post_id, "why_blocks_{$i}_title" );
+									if ( empty( $title ) ) continue;
+									?>
+									<li<?php echo $i === 1 ? ' class="active"' : ''; ?>>
+										<div class="collapsible-header">
+											<div class="collapsible-header-inner">
+												<h4><?php echo esc_html( $title ); ?></h4>
+												<i class="collapsible-icon">
+													<img src="<?php echo esc_url( get_template_directory_uri() . '/inc/collapsable-icon.svg' ); ?>" alt="">
+												</i>
+											</div>
+										</div>
+										<div class="collapsible-body">
+											<?php medman_rich( $post_id, "why_blocks_{$i}_text" ); ?>
+										</div>
+									</li>
+								<?php endfor; ?>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
 		<div class="parallax-wrap why-bottom-parallax" data-parallax data-parallax-speed-mobile="0.08" data-parallax-speed-desktop="0.18">
 			<?php
 			$bottom = medman_meta( $post_id, 'why_us_image_bottom' );
@@ -225,15 +214,12 @@ function medman_rich( $post_id, $key ) {
 				</div>
 			</div>
 		</div>
-
 	</section>
-
 	<!-- WORK -->
 	<section id="work" class="work">
-
 		<div class="container">
 			<div class="row">
-				<div class="s12">
+				<div class="col s12">
 					<div class="intro-title">
 						<h5>TOTAL TURNKEY DELIVERY</h5>
 					</div>
