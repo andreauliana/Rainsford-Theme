@@ -543,18 +543,24 @@ textarea {
  * .container (full-bleed backgrounds, grid tracks narrower than the
  * viewport) can still align their content to it instead of guessing a
  * fixed px value that only matches .container at one viewport width.
+ *
+ * Uses vw, not %: a % stored in a custom property re-resolves against
+ * whatever containing block it's consumed in (e.g. a 2fr grid track is
+ * narrower than the viewport), so it stops meaning "% of the viewport"
+ * the moment it's used somewhere that isn't full-bleed. vw always means
+ * viewport width, regardless of where it's consumed.
  */
 :root {
-	--page-gutter: 5%;
+	--page-gutter: 5vw;
 }
 @media only screen and (min-width: 600px) {
 	:root {
-		--page-gutter: 7.5%;
+		--page-gutter: 7.5vw;
 	}
 }
 @media only screen and (min-width: 993px) {
 	:root {
-		--page-gutter: max(5%, calc((100vw - 1370px) / 2));
+		--page-gutter: max(5vw, calc((100vw - 1370px) / 2));
 	}
 }
 
