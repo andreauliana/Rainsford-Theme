@@ -17,9 +17,6 @@
 			<div class="row">
 				<div class="col s12">
 					<div class="footer-grid">
-						<div class="footer-logo">
-							<img width="250" src="<?php echo esc_url( get_template_directory_uri() . '/inc/rainsford-logo-alt.svg' ); ?>" alt="Rainsford Developments">
-						</div>
 						<div class="footer-content">
 							<h5>CONTACT</h5>
 							<h3>Get in touch. Let&rsquo;s unlock opportunity.</h3>
@@ -31,14 +28,17 @@
 								<div class="contact-detail"><i><img src="<?php echo esc_url( get_template_directory_uri() . '/inc/ico-tel.svg' ); ?>"></i><a href="">020 8153 0466</a></div>
 							</div>
 							<div class="widescreen sub-content">
-								<h6><a href="/privacy-policy">PRIVACY POLICY</a></h6>
+								<h6><a href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>">PRIVACY POLICY</a></h6>
 								<h6>&copy; RAINSFORD DEVELOPMENTS</h6>
 							</div>
+						</div>
+						<div class="footer-logo">
+							<img width="250" src="<?php echo esc_url( get_template_directory_uri() . '/inc/rainsford-logo-alt.svg' ); ?>" alt="Rainsford Developments">
 						</div>
 					</div>
 					<hr class="footer-divider">
 					<div class="footer-bottom">
-						<h6><a href="/privacy-policy">PRIVACY POLICY</a></h6>
+						<h6><a href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>">PRIVACY POLICY</a></h6>
 						<h6>&copy; RAINSFORD DEVELOPMENTS</h6>
 					</div>
 				</div>

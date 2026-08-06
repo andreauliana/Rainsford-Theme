@@ -1208,6 +1208,10 @@ footer .contact .row {
 }
 footer .footer-logo {
 	width: 250px;
+	margin-left: 2rem;
+}
+.contact-detail {
+	margin-bottom: 0.5rem;
 }
 .footer-content i, .footer-content i img {
 	max-width: 17px;
@@ -1266,7 +1270,13 @@ footer .footer-logo {
 		align-items: start;
 		padding: 3rem 0;
 	}
-
+	/* .footer-logo moved after .footer-content in markup so mobile
+	   shows it below the contact details; restore it to the left
+	   column here since desktop keeps the original side-by-side look. */
+	.footer-logo {
+		order: -1;
+		margin-left: 0;
+	}
 }
 
 @media only screen and (min-width: 600px) {
