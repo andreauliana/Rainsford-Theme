@@ -1292,15 +1292,18 @@ footer .contact h3 {
 @media only screen and (min-width: 600px) {
 	.footer-content {
 		padding-bottom: .8rem;
-		border-bottom: 1px solid #E7E9DD;
+		border-bottom: transparent;
 	}
 	.footer-content,.footer-content a {
 		font-size: 20px;
 		line-height: 24px;
 		letter-spacing: normal;
 	}
-	.footer-content div {
-		margin-bottom: .5rem;
+	.footer-content .content div {
+		margin-bottom: .25rem;		
+	}	
+	.footer-content .content div.contact-detail {
+		margin-bottom: 1.75rem;		
 	}
 	.footer-content .no-icon {
 		margin-left: 18px;
@@ -1312,13 +1315,18 @@ footer .contact h3 {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		border-top: 1px solid #E7E9DD;
+		padding-top: 1.5rem;
+		margin-top: 2.5rem;
 	}
 	.footer-divider,
 	.footer-bottom {
 		display: none;
 	}
 }
+@media only screen and (min-width: 600px) { 
 
+}
 
 /* ADDED UX */
 
