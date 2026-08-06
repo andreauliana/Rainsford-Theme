@@ -4,7 +4,7 @@ Theme URI: https://medicineman.agency/
 Author: Medicineman
 Author URI: https://medicineman.agency/
 Description: Custom theme for Rainsford Development
-Version: 1.1.5
+Version: 1.2.0
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -554,15 +554,21 @@ html {
 section[id] {
 	scroll-margin-top: 50px;
 }
-
 /* NAV */
 nav {
 	background-color: transparent;
-	height: 50px;
+	height: 60px;
 	border-radius: 0;
 	box-shadow: none;
 }
-
+nav ul a:hover {
+	background-color: transparent;
+}
+@media only screen and (min-width: 600px) {
+	nav {
+		height: 80px;
+	}
+}
 .site-header {
 	position: fixed;
 	top: 0;
@@ -570,7 +576,6 @@ nav {
 	right: 0;
 	z-index: 1000;
 }
-
 .main-navigation .nav-wrapper {
 	height: 60px;
 	line-height: 60px;
@@ -579,12 +584,16 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 }
-
+@media only screen and (min-width: 600px) {
+	.main-navigation .nav-wrapper {
+		height: 80px;
+		line-height: 80px;
+	}
+}
 .main-navigation .brand-logo {
 	position: static;
 	transform: none;
 }
-
 .main-navigation .brand-logo img {
 	height: 24px;
 	width: auto;
@@ -597,29 +606,25 @@ nav {
 	font-size: 14px;
 	text-transform: initial;
 }
-
 @media only screen and (min-width: 600px) {
 	.main-navigation .brand-logo {
 		padding-left: 45px;
 	}
 	.main-navigation .brand-logo img {
-	    width: auto;
-	    max-width: 181px;
-	    margin-left: 20px;
-	    height: 36.27886199951172px;
+		width: 200px;
+	    margin-left: 0;
+	    height: auto;
 	    margin-top: .25rem;
 	}
 	.main-navigation ul {
 		padding-right: 40px;
 	}
 }
-
 .main-navigation .sidenav-trigger {
 	float: none;
-	margin: 0 18px 0 0;
+	margin: 0 10px 0 0;
 	height: 20px;
 }
-
 .hamburger-icon {
 	position: relative;
 	width: 22px;
