@@ -959,14 +959,13 @@ nav ul a:hover {
 }
 
 .collapsible-body li::before {
-	content: '';
+	content: '\2022';
 	position: absolute;
 	left: 0;
-	top: 0.55em;
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-	background: currentColor;
+	top: 0;
+	font-size: 1em;
+	line-height: inherit;
+	color: currentColor;
 }
 
 .reasons {
