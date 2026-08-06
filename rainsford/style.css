@@ -936,7 +936,7 @@ nav ul a:hover {
 	transform: rotate(0deg);
 }
 .collapsible-body {
-	padding: 1rem 0 0 0;
+	padding: .25rem 0 0 0;
 }
 .collapsible-body ul {
 	list-style: none;
