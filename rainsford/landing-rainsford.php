@@ -114,9 +114,9 @@ function medman_rich( $post_id, $key ) {
 				</div>
 			</div>
 
-			<div class="why-grid">
-				<div class="row">
-					<div class="col s12">
+			<div class="row">
+				<div class="col s12">
+					<div class="why-grid">
 						<div class="why-left">
 							<?php medman_rich( $post_id, 'why_us_content' ); ?>
 						</div>
