@@ -899,13 +899,13 @@ nav ul a:hover {
 	border: none;
 	box-shadow: none;
 	-webkit-box-shadow: none;
+	font-size: 16px;
+	line-height: 20px;
 }
-
 .collapsible-header {
 	margin: 0;
 	padding: 0;
 }
-
 .collapsible-header-inner {
 	display: flex;
 	align-items: center;
@@ -927,37 +927,30 @@ nav ul a:hover {
 	transition: transform 0.3s ease;
 	transform: rotate(180deg);	
 }
-
 .collapsible .collapsible-header .collapsible-icon img {
 	display: block;
 	width: 1rem;
 	height: 1rem;
 }
-
 .collapsible li.active .collapsible-header .collapsible-icon {
 	transform: rotate(0deg);
 }
-
 .collapsible-body {
-	padding: 1rem 0;
+	padding: 1rem 0 0 0;
 }
-
 .collapsible-body ul {
 	list-style: none;
 	margin: 0.5rem 0 0;
 	padding: 0;
 }
-
 .collapsible-body li {
 	position: relative;
 	padding-left: 1.1em;
 	margin-bottom: 0.5rem;
 }
-
 .collapsible-body li:last-child {
 	margin-bottom: 0;
 }
-
 .collapsible-body li::before {
 	content: '\2022';
 	position: absolute;
@@ -967,13 +960,11 @@ nav ul a:hover {
 	line-height: inherit;
 	color: currentColor;
 }
-
 .reasons {
 	background: #009B9D;
 	color: #fff;
 	padding-bottom: 1rem;
 }
-
 .reasons .intro-title {
 	padding: 3rem 0 3.25rem 0;
 }
@@ -981,7 +972,6 @@ nav ul a:hover {
 	border-top: 1px solid #fff;
 	padding: 1.75rem 0 2.35rem 0;
 }
-
 .reason-number {
   	font-family: "DM Mono", monospace;
 	font-size: 50px;
@@ -990,7 +980,6 @@ nav ul a:hover {
 	letter-spacing: -5%;
   	font-style: normal;
 }
-
 @media only screen and (min-width: 993px) {
 	.reasons {
 		display: grid;
@@ -1005,7 +994,6 @@ nav ul a:hover {
 		margin: 0;
 		padding-left: var(--page-gutter);
 	}
-
 	.reasons .full-width {
 		grid-column: 2;
 		grid-row: 1;
@@ -1013,8 +1001,6 @@ nav ul a:hover {
 		position: relative;
 		overflow: hidden;
 	}
-
-
 	.reasons .full-width img {
 		position: absolute;
 		inset: 0;
@@ -1022,18 +1008,15 @@ nav ul a:hover {
 		height: 100%;
 		object-fit: cover;
 	}
-
 	.reasons .row .col.s12 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 2.5rem;
 	}
-
 	.reasons .intro-title {
 		grid-column: 1 / -1;
 	}
 }
-
 /* WORK */
 .work {
 	background: #F3F4EE;
@@ -1094,7 +1077,6 @@ nav ul a:hover {
 .card-title {
 	border-bottom: 1px solid #E7E9DD;
 }
-
 @media only screen and (min-width: 600px) {
 	.work .card p {
 		font-size: 20px;
@@ -1114,18 +1096,15 @@ nav ul a:hover {
 	}
 }
 /* CASE STUDIES */
-
 .case-studies .intro-title {
 	padding: 1.35rem 0 2rem 0;
 }
-
 .case-study-item {
 	margin-bottom: 2.5rem;
 }
 .case-study-item:last-child {
 	margin-bottom: 0;
 }
-
 @media only screen and (min-width: 600px) {
 	.case-study-item {
 		display: flex;
@@ -1139,7 +1118,6 @@ nav ul a:hover {
 		flex: 1;
 	}
 }
-
 @media only screen and (min-width: 600px) {
 	.work-cards-row {
 		display: flex;
@@ -1149,7 +1127,6 @@ nav ul a:hover {
 		height: 100%;
 	}
 }
-
 .why-us {
 	background: #F3F4EE;
 }
@@ -1161,7 +1138,7 @@ nav ul a:hover {
 	border-color: #7B7B7A;
 }
 .why-us .collapsible-body {
-	border-color: #7B7B7A;
+	border-color: transparent;
 }
 
 @media only screen and (min-width: 600px) {
