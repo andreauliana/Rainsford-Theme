@@ -865,9 +865,6 @@ nav ul a:hover {
 		z-index: 1;
 	}
 }
-
-
-
 .sectors-container .col {
 	min-height: 250px;
 	margin-bottom: 1.15rem;
@@ -886,19 +883,18 @@ nav ul a:hover {
 }
 
 .sectors-container .col p {
-	margin: 0;
+	margin: 0 3rem;
 	position: relative;
 	z-index: 1;
+	width: 60%;
 }
 .sectors-container .col:last-child {
 	margin-bottom: 0;
 }
-
 .about .container:last-child .row {
 	padding-bottom: 2rem;
 	margin-bottom: 0;
 }
-
 .collapsible {
 	border: none;
 	box-shadow: none;
