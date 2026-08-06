@@ -802,6 +802,10 @@ nav ul a:hover {
 	flex-direction: column;
 }
 
+.box1, .box2 {
+	position: relative;
+	overflow: hidden;
+}
 .box1 {
 	background: #E7E9DD;
 	min-height: 316px;
@@ -855,29 +859,10 @@ nav ul a:hover {
 		padding-bottom: 30px;
 	}
 
-	.box1, .box2 {
-		position: relative;
-		overflow: hidden;
-	}
-
 	.box1 .container,
 	.box2 .container {
 		position: relative;
 		z-index: 1;
-	}
-	.box1::before {
-		content: '';
-		position: absolute;
-		inset: 0;
-		background: url('inc/bg-boxes-01.svg') no-repeat right bottom;
-		z-index: 0;
-	}
-	.box2::before {
-		content: '';
-		position: absolute;
-		inset: 0;
-		background: url('inc/bg-boxes-02.svg') no-repeat left bottom;
-		z-index: 0;
 	}
 }
 
