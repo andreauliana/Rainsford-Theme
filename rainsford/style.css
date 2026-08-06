@@ -1208,19 +1208,29 @@ footer .contact .row {
 }
 footer .footer-logo {
 	width: 250px;
-	margin-left: 2rem;
+	margin: 1.0933333333rem 0 .656rem 0;
+	padding-top: 3rem;
+}
+footer .contact h3 {
+	margin-bottom: 3rem;.contact-detail
+}
+@media only screen and (min-width: 600px) {
+	footer .footer-logo {
+		padding-top: 1rem;
+	}
 }
 .contact-detail {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 .footer-content i, .footer-content i img {
-	max-width: 17px;
+	max-width: 1rem;
 	height: auto;
 }
 .footer-content i {
     display: inline-flex;
-    left: -15px;
+    left: -1rem;
     position: relative;
+    top: .12rem;
 }
 .footer-content .content {
 	margin-left: 15px;

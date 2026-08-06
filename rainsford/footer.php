@@ -21,11 +21,11 @@
 							<h5>CONTACT</h5>
 							<h3>Get in touch. Let&rsquo;s unlock opportunity.</h3>
 							<div class='content'>
-								<div><i><img src="<?php echo esc_url( get_template_directory_uri() . '/inc/ico-loc.svg' ); ?>"></i><a href="https://maps.app.goo.gl/XpAaUjFBAxqgEe7K6">51 Moorgate</a>
+								<div><i><img src="<?php echo esc_url( get_template_directory_uri() . '/inc/ico-loc.svg' ); ?>"></i><a target="_blank" href="https://maps.app.goo.gl/XpAaUjFBAxqgEe7K6">51 Moorgate</a>
 								</div>
-								<div class="contact-detail no-icon"><a href="https://maps.app.goo.gl/XpAaUjFBAxqgEe7K6">London, EC2R 6BH</a></div>
-								<div class="contact-detail"><i><img src="<?php echo esc_url( get_template_directory_uri() . '/inc/ico-mail.svg' ); ?>"></i><a title="contact Rainsford" href="mailto:info@rainsford.co.uk">info@rainsford.co.uk</a></div>
-								<div class="contact-detail"><i><img src="<?php echo esc_url( get_template_directory_uri() . '/inc/ico-tel.svg' ); ?>"></i><a href="">020 8153 0466</a></div>
+								<div class="contact-detail no-icon"><a target="_blank" href="https://maps.app.goo.gl/XpAaUjFBAxqgEe7K6">London, EC2R 6BH</a></div>
+								<div class="contact-detail"><i><img src="<?php echo esc_url( get_template_directory_uri() . '/inc/ico-mail.svg' ); ?>"></i><a target="_blank" title="contact Rainsford" href="mailto:info@rainsford.co.uk">info@rainsford.co.uk</a></div>
+								<div class="contact-detail"><i><img src="<?php echo esc_url( get_template_directory_uri() . '/inc/ico-tel.svg' ); ?>"></i><a target="_blank" href="tel:020 81530466">020 8153 0466</a></div>
 							</div>
 							<div class="widescreen sub-content">
 								<h6><a href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>">PRIVACY POLICY</a></h6>
