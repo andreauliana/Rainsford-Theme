@@ -30,22 +30,24 @@
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="main-navigation">
 			<div class="nav-wrapper">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-logo">
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/inc/rainsford-logo.svg' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
-				</a>
-				<a href="#" data-target="mobile-nav" id="hamburger-icon" class="sidenav-trigger hide-on-large-only hamburger-icon">
-					<span class="hamburger-line"></span>
-					<span class="hamburger-line"></span>
-					<span class="hamburger-line"></span>
-				</a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">About Us</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/#why-us' ) ); ?>">Why Us</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Team</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/#work' ) ); ?>">Delivery</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/#case-studies' ) ); ?>">Work</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Contact Us</a></li>
-				</ul>
+				<div class="container">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-logo">
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/inc/rainsford-logo.svg' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
+					</a>
+					<a href="#" data-target="mobile-nav" id="hamburger-icon" class="sidenav-trigger hide-on-large-only hamburger-icon">
+						<span class="hamburger-line"></span>
+						<span class="hamburger-line"></span>
+						<span class="hamburger-line"></span>
+					</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">About Us</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/#why-us' ) ); ?>">Why Us</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Team</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/#work' ) ); ?>">Delivery</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/#case-studies' ) ); ?>">Work</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Contact Us</a></li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 		<ul class="sidenav" id="mobile-nav">

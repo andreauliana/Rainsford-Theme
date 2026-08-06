@@ -578,16 +578,18 @@ nav ul a:hover {
 }
 .main-navigation .nav-wrapper {
 	height: 60px;
-	line-height: 60px;
 	background: #fff;
+}
+.main-navigation .nav-wrapper .container {
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	padding: 0 0.75rem;
 }
 @media only screen and (min-width: 600px) {
 	.main-navigation .nav-wrapper {
 		height: 80px;
-		line-height: 80px;
 	}
 }
 .main-navigation .brand-logo {
@@ -597,7 +599,6 @@ nav ul a:hover {
 .main-navigation .brand-logo img {
 	height: 24px;
 	width: auto;
-	margin-left: 20px;
 }
 .main-navigation ul li a {
 	line-height: 50px;
@@ -607,17 +608,10 @@ nav ul a:hover {
 	text-transform: initial;
 }
 @media only screen and (min-width: 600px) {
-	.main-navigation .brand-logo {
-		padding-left: 45px;
-	}
 	.main-navigation .brand-logo img {
 		width: 200px;
-	    margin-left: 0;
 	    height: auto;
 	    margin-top: .25rem;
-	}
-	.main-navigation ul {
-		padding-right: 40px;
 	}
 }
 .main-navigation .sidenav-trigger {
