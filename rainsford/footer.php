@@ -30,6 +30,7 @@
 							<div class="widescreen sub-content">
 								<h6><a href="<?php echo esc_url( home_url( '/privacy-policy' ) ); ?>">PRIVACY POLICY</a></h6>
 								<h6>&copy; RAINSFORD DEVELOPMENTS</h6>
+								<h6 class="site-credit"><a href="https://medicineman.agency/" target="_blank" rel="noopener" title="visit medicine man website">SITE BY MEDICINEMAN</a></h6>
 							</div>
 						</div>
 						<div class="footer-logo">
