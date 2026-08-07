@@ -222,7 +222,7 @@ function medman_rich( $post_id, $key ) {
 						<h5>TOTAL TURNKEY DELIVERY</h5>
 					</div>
 					<h1><?php echo esc_html( medman_meta( $post_id, 'work_intro' ) ); ?></h1>
-					<h4><?php medman_rich( $post_id, 'work_content' ); ?></h4>
+					<div class="work-lead"><?php medman_rich( $post_id, 'work_content' ); ?></div>
 				</div>
 			</div>
 		</div>
