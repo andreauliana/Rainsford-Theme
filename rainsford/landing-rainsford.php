@@ -213,8 +213,8 @@ function medman_rich( $post_id, $key ) {
 			</div>
 		</div>
 	</section>
-	<!-- WORK -->
-	<section id="work" class="work">
+	<!-- DELIVERY -->
+	<section id="delivery" class="delivery">
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m6">
@@ -222,12 +222,12 @@ function medman_rich( $post_id, $key ) {
 						<h5>TOTAL TURNKEY DELIVERY</h5>
 					</div>
 					<h1><?php echo esc_html( medman_meta( $post_id, 'work_intro' ) ); ?></h1>
-					<div class="work-lead"><?php medman_rich( $post_id, 'work_content' ); ?></div>
+					<div class="delivery-lead"><?php medman_rich( $post_id, 'work_content' ); ?></div>
 				</div>
 			</div>
 		</div>
 		<div class="container">
-			<div class="row work-cards-row">
+			<div class="row delivery-cards-row">
 				<div class="col s12 m6">
 					<div class="card">
 						<div class="card-content">

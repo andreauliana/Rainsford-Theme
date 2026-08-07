@@ -46,7 +46,7 @@
 							<li><a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">About Us</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/#why-us' ) ); ?>">Why Us</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Team</a></li>
-							<li><a href="<?php echo esc_url( home_url( '/#work' ) ); ?>">Delivery</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/#delivery' ) ); ?>">Delivery</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/#case-studies' ) ); ?>">Work</a></li>
 							<li><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Contact Us</a></li>
 						</ul>
@@ -59,7 +59,7 @@
 			<li><a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">About</a></li>
 			<li><a href="<?php echo esc_url( home_url( '/#why-us' ) ); ?>">Why Us</a></li>
 			<li><a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Team</a></li>
-			<li><a href="<?php echo esc_url( home_url( '/#work' ) ); ?>">Delivery</a></li>
+			<li><a href="<?php echo esc_url( home_url( '/#delivery' ) ); ?>">Delivery</a></li>
 			<li><a href="<?php echo esc_url( home_url( '/#case-studies' ) ); ?>">Work</a></li>
 			<li><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Contact Us</a></li>
 		</ul>

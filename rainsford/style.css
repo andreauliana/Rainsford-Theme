@@ -1041,70 +1041,70 @@ nav ul a:hover {
 		line-height: 70px;
 	}
 }
-/* WORK */
-.work {
+/* DELIVERY */
+.delivery {
 	background: #F3F4EE;
 }
-.work .intro-title {
+.delivery .intro-title {
 	padding: 2.25rem 0 0 0;
 }
-.work-lead {
+.delivery-lead {
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: normal;
 	font-weight: 500;
 }
-.work-lead p {
+.delivery-lead p {
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: normal;
 	font-weight: 500;
 }
-.work .closing-content {
+.delivery .closing-content {
 	padding-bottom: 1.75rem;
 }
-.work .card {
+.delivery .card {
 	border-radius: 8px;
 	background: #fff;
 	box-shadow: none;
 }
-.work .card .header {
+.delivery .card .header {
 	font-family: 'Dm Sans';
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 24px;
 }
-.work .card-content .card-title {
+.delivery .card-content .card-title {
 	padding-bottom: 1.25rem;
 	margin-bottom: 1.25rem;
 }
-.work .card-title p {
+.delivery .card-title p {
 	font-size: 16px;
 	line-height: 20px;
 }
-.work .card .content {
+.delivery .card .content {
 	font-family: 'Dm Sans';
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 24px;
 	letter-spacing: -0.01em;
 }
-.work .card ul {
+.delivery .card ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-.work .card ul li {
+.delivery .card ul li {
 	font-size: 16px;
 	line-height: 20px;
 	position: relative;
 	padding-left: 25px; /* 12px icon + 13px gap */
 	margin-bottom: .7rem;
 }
-.work .card ul li:last-child {
+.delivery .card ul li:last-child {
 	margin-bottom: 0;
 }
-.work .card ul li::before {
+.delivery .card ul li::before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1113,7 +1113,7 @@ nav ul a:hover {
 	height: 12px;
 	background: url('inc/list.svg') no-repeat center / contain;
 }
-.work .card p {
+.delivery .card p {
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: 400;
@@ -1124,29 +1124,29 @@ nav ul a:hover {
 	border-bottom: 1px solid #E7E9DD;
 }
 @media only screen and (min-width: 600px) {
-	.work-lead, .work-lead p  {
+	.delivery-lead, .delivery-lead p  {
 		font-size: 24px;
 		line-height: 26px;
 		font-weight: 500;
 		letter-spacing: normal;
 	}	
-	.work .card p {
+	.delivery .card p {
 		font-size: 20px;
 		line-height: 24px;
 		font-weight: 400;
 		letter-spacing: normal;
 	}
-	.work .card-content {
+	.delivery .card-content {
 		padding: 0;
 		margin: 0;
 	}
 	.card .card-content .card-title {
 		padding: 1.5rem 1rem 1.5rem 1.5rem;
 	}
-	.work .card ul {
+	.delivery .card ul {
     	padding: 1.5rem 2rem 1.5rem 1.5rem;
 	}
-	.work .card ul li {
+	.delivery .card ul li {
 		font-size: 20px;
 		line-height: 24px;
 	}
@@ -1175,11 +1175,11 @@ nav ul a:hover {
 	}
 }
 @media only screen and (min-width: 600px) {
-	.work-cards-row {
+	.delivery-cards-row {
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.work-cards-row .card {
+	.delivery-cards-row .card {
 		height: 100%;
 	}
 }
