@@ -15,6 +15,11 @@ This theme, like WordPress, is licensed under the GPL.
 
 */
 
+:root {
+	--brand-dark: #1D1D1B;
+	--brand-teal: #009B9D;
+}
+
 html {-webkit-text-size-adjust: 100%;}
 body {margin: 0;}
 main {	display: block;}
@@ -200,6 +205,14 @@ p {
 	line-height: 20px;
 	font-weight: 300;
 	letter-spacing: normal;
+}
+/* Light-on-dark paragraphs read thin at 300 (halation blurs the
+   strokes), so sections with white text on a dark/teal background
+   step back up to 400. */
+.about p,
+.reasons p,
+.team p {
+	font-weight: 400;
 }
 
 @media only screen and (min-width: 600px) {
@@ -629,7 +642,7 @@ nav ul a:hover {
 }
 .main-navigation ul li a {
 	line-height: 50px;
-	color: #1D1D1B;
+	color: var(--brand-dark);
 	font-family: 'DM Mono', monospace;
 	font-size: 14px;
 	text-transform: initial;
@@ -638,7 +651,7 @@ nav ul a:hover {
 	display: inline-flex;
 	align-items: center;
 	color: #fff;
-	background: #009B9D;
+	background: var(--brand-teal);
 	font-family: 'DM Mono', monospace;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -742,6 +755,9 @@ nav ul a:hover {
 	will-change: transform;
 }
 
+.hero h1 {
+	color: var(--brand-dark);
+}
 .hero-parallax {
 	height: 50vw;
 	max-height: 379px;
@@ -783,7 +799,7 @@ nav ul a:hover {
 	}
 }
 .about {
-	background: #009B9D;
+	background: var(--brand-teal);
 	color: #FFF;
 }
 .about-left h5 {
@@ -835,7 +851,7 @@ nav ul a:hover {
 	min-height: 316px;
 }
 .box2 {
-	background: #1D1D1B;
+	background: var(--brand-dark);
 	color: #fff;
 	min-height: 362px;
 }
@@ -985,7 +1001,7 @@ nav ul a:hover {
 	color: currentColor;
 }
 .reasons {
-	background: #009B9D;
+	background: var(--brand-teal);
 	color: #fff;
 	padding-bottom: 1rem;
 }
@@ -1123,7 +1139,7 @@ nav ul a:hover {
 	line-height: 20px;
 	font-weight: 400;
 	letter-spacing: normal;
-	color: #1D1D1B;
+	color: var(--brand-dark);
 }
 .card-title {
 	border-bottom: 1px solid #E7E9DD;
@@ -1223,7 +1239,7 @@ nav ul a:hover {
 	}
 }
 .team {
-	background: #1D1D1B;
+	background: var(--brand-dark);
 	color: #FFF;
 	background-image: url(inc/team-bg.svg);
 	background-position: bottom;
@@ -1259,7 +1275,7 @@ footer {
 	font-size: 1rem;
 	line-height: 20px;
 	letter-spacing: normal;
-	background: #1D1D1B;
+	background: var(--brand-dark);
 	color: #fff;
 	padding-bottom: 3rem;
 }
@@ -1403,7 +1419,7 @@ footer .contact h3 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: #1D1D1B;
+	background: var(--brand-dark);
 	color: #fff;
 	border-radius: 50%;
 	text-decoration: none;
