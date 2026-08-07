@@ -1012,9 +1012,14 @@ nav ul a:hover {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 2.5rem;
+		padding-right: 3rem;
 	}
 	.reasons .intro-title {
 		grid-column: 1 / -1;
+	}
+	.reason-number {
+		font-size: 70px;
+		line-height: 70px;
 	}
 }
 /* WORK */
