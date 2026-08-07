@@ -34,22 +34,29 @@
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand-logo">
 						<img src="<?php echo esc_url( get_template_directory_uri() . '/inc/rainsford-logo.svg' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
 					</a>
-					<a href="#" data-target="mobile-nav" id="hamburger-icon" class="sidenav-trigger hide-on-large-only hamburger-icon">
-						<span class="hamburger-line"></span>
-						<span class="hamburger-line"></span>
-						<span class="hamburger-line"></span>
-					</a>
-					<ul class="right hide-on-med-and-down">
-						<li><a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">About Us</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/#why-us' ) ); ?>">Why Us</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Team</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/#work' ) ); ?>">Delivery</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/#case-studies' ) ); ?>">Work</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Contact Us</a></li>
-					</ul>
+					<?php if ( is_single() ) : ?>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="back-home">
+							&larr; <?php esc_html_e( 'Back to home', 'rainsford' ); ?>
+						</a>
+					<?php else : ?>
+						<a href="#" data-target="mobile-nav" id="hamburger-icon" class="sidenav-trigger hide-on-large-only hamburger-icon">
+							<span class="hamburger-line"></span>
+							<span class="hamburger-line"></span>
+							<span class="hamburger-line"></span>
+						</a>
+						<ul class="right hide-on-med-and-down">
+							<li><a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">About Us</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/#why-us' ) ); ?>">Why Us</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/#team' ) ); ?>">Team</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/#work' ) ); ?>">Delivery</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/#case-studies' ) ); ?>">Work</a></li>
+							<li><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Contact Us</a></li>
+						</ul>
+					<?php endif; ?>
 				</div>
 			</div>
 		</nav>
+		<?php if ( ! is_single() ) : ?>
 		<ul class="sidenav" id="mobile-nav">
 			<li><a href="<?php echo esc_url( home_url( '/#about' ) ); ?>">About</a></li>
 			<li><a href="<?php echo esc_url( home_url( '/#why-us' ) ); ?>">Why Us</a></li>
@@ -58,4 +65,5 @@
 			<li><a href="<?php echo esc_url( home_url( '/#case-studies' ) ); ?>">Work</a></li>
 			<li><a href="<?php echo esc_url( home_url( '/#contact' ) ); ?>">Contact Us</a></li>
 		</ul>
+		<?php endif; ?>
 	</header><!-- #masthead -->

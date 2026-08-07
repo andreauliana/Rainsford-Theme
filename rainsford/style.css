@@ -634,6 +634,12 @@ nav ul a:hover {
 	font-size: 14px;
 	text-transform: initial;
 }
+.main-navigation .back-home {
+	color: #1D1D1B;
+	font-family: 'DM Mono', monospace;
+	font-size: 14px;
+	text-decoration: none;
+}
 @media only screen and (min-width: 600px) {
 	.main-navigation .brand-logo img {
 		width: 200px;
