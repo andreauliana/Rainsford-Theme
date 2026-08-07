@@ -115,7 +115,6 @@ fieldset {
 	padding: 0.35em 0.75em 0.625em;
 }
 
-
 [type="checkbox"],
 [type="radio"] {
 	box-sizing: border-box;
@@ -258,11 +257,6 @@ p {
 		letter-spacing: normal;
 	}
 }
-/* Container h1 title hero width for wide screen */
-@media only screen and (min-width: 600px) {
-	.hero h1 { max-width:800px }
-}
-/* desktop */ @media only screen and (min-width: 992px) {  }
 dfn,
 cite,
 em,
@@ -476,17 +470,10 @@ textarea {
 	display: none;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-/*	margin: 1.5em 0 0;*/
-}
-
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
 }
-
 
 /* Media
 --------------------------------------------- */
@@ -538,7 +525,6 @@ textarea {
 #primary[tabindex="-1"]:focus {
 	outline: 0;
 }
-
 
 /* START CUSTOM CODE */
 /* Quick wider container fix - later to adapt on SASS */
@@ -675,7 +661,7 @@ nav ul a:hover {
 }
 .main-navigation .sidenav-trigger {
 	float: none;
-	margin: 0 -10px 0 0;;
+	margin: 0 -10px 0 0;
 	height: 20px;
 }
 @media only screen and (min-width: 600px) {
@@ -719,8 +705,6 @@ nav ul a:hover {
 	transform: rotate(-45deg);
 }
 
-
-
 .landing-rainsford {
 	padding-top: 50px;
 }
@@ -736,8 +720,15 @@ nav ul a:hover {
 		padding-top: calc(80px + 3rem);
 	}
 }
+/* HERO */
+.hero h1 {
+	color: var(--brand-dark);
+}
 @media only screen and (min-width: 600px) {
-	.hero h1 {margin: 5.5rem 0 1.68rem 0 }
+	.hero h1 {
+		max-width: 800px;
+		margin: 5.5rem 0 1.68rem 0;
+	}
 }
 .parallax-wrap {
 	position: relative;
@@ -755,9 +746,6 @@ nav ul a:hover {
 	will-change: transform;
 }
 
-.hero h1 {
-	color: var(--brand-dark);
-}
 .hero-parallax {
 	height: 50vw;
 	max-height: 379px;
@@ -798,6 +786,7 @@ nav ul a:hover {
 		margin-left:1.75rem; /* margin-left: 40px (80/2) - .75rem (int padding) */
 	}
 }
+/* ABOUT */
 .about {
 	background: var(--brand-teal);
 	color: #FFF;
@@ -805,9 +794,6 @@ nav ul a:hover {
 .about-left h5 {
 	padding: 1.5rem 0 .656rem 0;
 	margin: 0;
-}
-.about-right p {
-	font-weight: 300;
 }
 .about-right h3 {
 	margin-bottom: 2rem;
@@ -828,13 +814,10 @@ nav ul a:hover {
 		column-gap: 80px;
 		align-items: start;
 	}
-	.why-grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 80px;
-		align-items: start;
-		margin-top: 2rem;
-	}
+}
+.about .container:last-child .row {
+	padding-bottom: 2rem;
+	margin-bottom: 0;
 }
 
 .hero-boxes {
@@ -931,10 +914,6 @@ nav ul a:hover {
 .sectors-container .col:last-child {
 	margin-bottom: 0;
 }
-.about .container:last-child .row {
-	padding-bottom: 2rem;
-	margin-bottom: 0;
-}
 .collapsible {
 	border: none;
 	box-shadow: none;
@@ -1000,6 +979,7 @@ nav ul a:hover {
 	line-height: inherit;
 	color: currentColor;
 }
+/* SIX REASONS */
 .reasons {
 	background: var(--brand-teal);
 	color: #fff;
@@ -1013,12 +993,11 @@ nav ul a:hover {
 	padding: 1.75rem 0 2.35rem 0;
 }
 .reason-number {
-  	font-family: "DM Mono", monospace;
+	font-family: "DM Mono", monospace;
 	font-size: 50px;
 	line-height: 50px;
 	font-weight: 300;
-	letter-spacing: -5%;
-  	font-style: normal;
+	font-style: normal;
 }
 @media only screen and (min-width: 993px) {
 	.reasons {
@@ -1204,6 +1183,7 @@ nav ul a:hover {
 		height: 100%;
 	}
 }
+/* WHY US */
 .why-us {
 	background: #F3F4EE;
 }
@@ -1235,9 +1215,15 @@ nav ul a:hover {
 
 @media only screen and (min-width: 600px) {
 	.why-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 80px;
+		align-items: start;
+		margin-top: 2rem;
 		padding-bottom: 2.5rem;
 	}
 }
+/* TEAM */
 .team {
 	background: var(--brand-dark);
 	color: #FFF;
