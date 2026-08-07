@@ -1029,15 +1029,13 @@ nav ul a:hover {
 .work .intro-title {
 	padding: 2.25rem 0 0 0;
 }
-/*
- * work_content goes through the_content filter (medman_rich), which
- * wraps it in a real <p> — nesting that inside an <h4> produced
- * invalid <h4><p>...</p></h4> markup where the <p> silently won the
- * cascade over the heading's own styles. Markup is a plain <div> now
- * (matching every other medman_rich() wrapper in this template); this
- * rule reproduces the h4 look without using the heading tag.
- */
 .work-lead {
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: normal;
+	font-weight: 500;
+}
+.work-lead p {
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: normal;
@@ -1107,12 +1105,12 @@ nav ul a:hover {
 	border-bottom: 1px solid #E7E9DD;
 }
 @media only screen and (min-width: 600px) {
-	.work-lead {
+	.work-lead, .work-lead p  {
 		font-size: 24px;
 		line-height: 26px;
 		font-weight: 500;
 		letter-spacing: normal;
-	}
+	}	
 	.work .card p {
 		font-size: 20px;
 		line-height: 24px;
