@@ -153,7 +153,6 @@ function medman_rich( $post_id, $key ) {
 			?>
 		</div>
 	</section>
-
 	<!-- TEAM -->
 	<section id="team" class="team">
 		<div class="container">
@@ -185,7 +184,6 @@ function medman_rich( $post_id, $key ) {
 			</div>
 		</div>
 	</section>
-
 	<!-- SIX REASONS -->
 	<section id="reasons" class="reasons">
 		<div class="full-width">
@@ -219,7 +217,7 @@ function medman_rich( $post_id, $key ) {
 	<section id="work" class="work">
 		<div class="container">
 			<div class="row">
-				<div class="col s12">
+				<div class="col s12 m6">
 					<div class="intro-title">
 						<h5>TOTAL TURNKEY DELIVERY</h5>
 					</div>
@@ -228,7 +226,6 @@ function medman_rich( $post_id, $key ) {
 				</div>
 			</div>
 		</div>
-
 		<div class="container">
 			<div class="row work-cards-row">
 				<div class="col s12 m6">

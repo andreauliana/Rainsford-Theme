@@ -33,7 +33,7 @@ abbr[title] {
 	text-decoration: underline;
 	text-decoration: underline dotted;
 }
-b,strong {font-weight: bolder;}
+b,strong {font-weight: 700;}
 code,
 kbd,
 samp {
@@ -198,7 +198,7 @@ h6 {
 p {
 	font-size: 16px;
 	line-height: 20px;
-	font-weight: 400;
+	font-weight: 300;
 	letter-spacing: normal;
 }
 
@@ -241,7 +241,7 @@ p {
 	p {
 		font-size: 20px;
 		line-height: 24px;
-		font-weight: 400;
+		font-weight: 300;
 		letter-spacing: normal;
 	}
 }
@@ -1043,6 +1043,14 @@ nav ul a:hover {
 	font-size: 20px;
 	line-height: 24px;
 }
+.work .card-content .card-title {
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+.work .card-title p {
+	font-size: 16px;
+	line-height: 20px;
+}
 .work .card .content {
 	font-family: 'Dm Sans';
 	font-weight: 400;
@@ -1056,9 +1064,11 @@ nav ul a:hover {
 	padding: 0;
 }
 .work .card ul li {
+	font-size: 16px;
+	line-height: 20px;
 	position: relative;
 	padding-left: 25px; /* 12px icon + 13px gap */
-	margin-bottom: 0.7rem;
+	margin-bottom: .7rem;
 }
 .work .card ul li:last-child {
 	margin-bottom: 0;
@@ -1098,6 +1108,10 @@ nav ul a:hover {
 	}
 	.work .card ul {
     	padding: 1.5rem 2rem 1.5rem 1.5rem;
+	}
+	.work .card ul li {
+		font-size: 20px;
+		line-height: 24px;
 	}
 }
 /* CASE STUDIES */
@@ -1242,7 +1256,9 @@ footer .contact h3 {
 }
 .footer-content a {
 	color: #fff;
-	font-size: 1rem;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
 }
 .footer-content .widescreen {
 	display: none;
