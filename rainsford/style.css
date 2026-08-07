@@ -699,6 +699,18 @@ nav ul a:hover {
 .landing-rainsford {
 	padding-top: 50px;
 }
+/* .site-header is position:fixed with no media-query exception, so any
+   template that isn't the landing page (404, plain pages) needs the
+   same clearance the landing page already gets, matched to the real
+   nav height (.main-navigation .nav-wrapper: 60px / 80px). */
+.site-main {
+	padding: calc(60px + 2rem) 0 3rem;
+}
+@media only screen and (min-width: 600px) {
+	.site-main {
+		padding-top: calc(80px + 3rem);
+	}
+}
 @media only screen and (min-width: 600px) {
 	.hero h1 {margin: 5.5rem 0 1.68rem 0 }
 }
