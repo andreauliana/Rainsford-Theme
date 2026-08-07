@@ -35,9 +35,7 @@
 						<img src="<?php echo esc_url( get_template_directory_uri() . '/inc/rainsford-logo.svg' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
 					</a>
 					<?php if ( is_single() ) : ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="back-home">
-							&larr; <?php esc_html_e( 'Back to home', 'rainsford' ); ?>
-						</a>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="back-home"><?php esc_html_e( 'Back', 'rainsford' ); ?></a>
 					<?php else : ?>
 						<a href="#" data-target="mobile-nav" id="hamburger-icon" class="sidenav-trigger hide-on-large-only hamburger-icon">
 							<span class="hamburger-line"></span>

@@ -635,10 +635,16 @@ nav ul a:hover {
 	text-transform: initial;
 }
 .main-navigation .back-home {
-	color: #1D1D1B;
+	display: inline-flex;
+	align-items: center;
+	color: #fff;
+	background: #009B9D;
 	font-family: 'DM Mono', monospace;
 	font-size: 14px;
+	text-transform: uppercase;
 	text-decoration: none;
+	padding: 0.5rem 1.25rem;
+	border-radius: 4px;
 }
 @media only screen and (min-width: 600px) {
 	.main-navigation .brand-logo img {
