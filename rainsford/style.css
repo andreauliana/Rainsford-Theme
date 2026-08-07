@@ -967,6 +967,12 @@ nav ul a:hover {
 	padding-left: 1.1em;
 	margin-bottom: 0.5rem;
 }
+@media only screen and (min-width: 600px) {
+	.collapsible-body li {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
 .collapsible-body li:last-child {
 	margin-bottom: 0;
 }
